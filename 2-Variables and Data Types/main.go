@@ -25,6 +25,18 @@ func main() {
 	// Another Variaton of Variable Defination
 	tax3 := 25.2
 	fmt.Println(tax3)
-	fmt.Printf("data type : %T", tax3)
+	fmt.Printf("data type : %T\n", tax3)
+
+	// Logical Variables
+	var status bool
+
+	var txt1 string = "Ali"
+	var txt2 string = "Ahmet"
+
+	// status = txt1 == txt2
+	status = txt1 != txt2
+
+	fmt.Println(status)
+	fmt.Println(!status)
 
 }
