@@ -6,5 +6,6 @@ import (
 
 func main() {
 	// conditionals.Demo1()
-	conditionals.Demo2()
+	// conditionals.Demo2()
+	conditionals.Demo3()
 }
