@@ -8,6 +8,11 @@ import (
 func main() {
 	functions.SayHi("Enes")
 	// functions.Sum(2, 3)
-	var result = functions.Sum(2, 6)
-	fmt.Println(result)
+	// var result = functions.Sum(2, 6)
+	// fmt.Println(result)
+	result1, result2, result3, result4 := functions.FourOperations(10, 6)
+	fmt.Println("Sum :", result1)
+	fmt.Println("Sub :", result2)
+	fmt.Println("Mul :", result3)
+	fmt.Println("Div :", result4)
 }
