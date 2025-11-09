@@ -14,5 +14,6 @@ func main() {
 	// pointers.Demo2(nums)
 	// fmt.Println("The number in main ", nums[0])
 
-	structs.Demo1()
+	// structs.Demo1()
+	structs.Demo2()
 }
