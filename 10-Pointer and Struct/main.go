@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	pointers "gocourse/Pointers"
+	structs "gocourse/Structs"
+	// pointers "gocourse/Pointers"
 )
 
 func main() {
@@ -10,7 +10,9 @@ func main() {
 	// pointers.Demo1(&num)
 	// fmt.Println("The number in main ", num)
 
-	nums := []int{1, 2, 3}
-	pointers.Demo2(nums)
-	fmt.Println("The number in main ", nums[0])
+	// nums := []int{1, 2, 3}
+	// pointers.Demo2(nums)
+	// fmt.Println("The number in main ", nums[0])
+
+	structs.Demo1()
 }
