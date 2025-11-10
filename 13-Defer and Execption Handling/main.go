@@ -9,5 +9,6 @@ func main() {
 	// deferstatement.B()
 	// deferstatement.Test()
 	// deferstatement.Demo3()
-	errorhandling.Demo1()
+	// errorhandling.Demo1()
+	errorhandling.Demo2()
 }
