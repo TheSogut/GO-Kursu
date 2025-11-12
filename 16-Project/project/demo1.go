@@ -1,6 +1,7 @@
 package project
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -33,6 +34,22 @@ func GetAllProducts() {
 	fmt.Println(products)
 }
 
+func AddProduct() {
+	product := Product{Id: 4, ProductName: "Telephone", CategoryId: 1, UnitPrice: 5999.99}
+	jsonProduct, err := json.Marshal(product)
+
+	repsonse, err := http.Post("http://localhost:3000/products", "application/json;charset=utf-8", bytes.NewBuffer(jsonProduct))
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	defer repsonse.Body.Close()
+
+	fmt.Println("Saved")
+}
+
 func Demo1() {
+	AddProduct()
 	GetAllProducts()
 }
